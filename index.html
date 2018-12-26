@@ -13,8 +13,6 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Source+Code+Pro:400,700" rel="stylesheet">
   <link rel="stylesheet" href="files/css/main.css">
 
-  <link rel="stylesheet" href="grid/style.css">
-
   <meta property="og:url" content="https://hackomania.geekshacking.com/index.html" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="HackOMania 2019 / 23-24th Feb 2019" />
@@ -89,7 +87,7 @@
   </header>
   <main>
 
-    <a class="facebookShare" href="https://www.facebook.com/sharer/sharer.php?u=https://hackomania.geekshacking.com/index.html"
+    <a class="facebookShare tap" href="https://www.facebook.com/sharer/sharer.php?u=https://hackomania.geekshacking.com/index.html"
       target="_blank">SHARE<img src="files/media/s_fb_white.svg"></a>
 
     <section id="home" class="topFold fullyTopFold" style="background-image: url('files/media/topFoldBgCircle.png');">
@@ -97,34 +95,12 @@
         <div class="g">
           <div class="r">
             <div class="content lg-8 lg-offset-2 md-8 md-offset-2 sm-12 sm-offset-0">
-              <div id="original">
-                <img src="files/media/hackomania2019.png" />
+              <img src="files/media/hackomania2019.png" />
 
-                <h5 class="countDown"><span class="d">116</span> DAYS LEFT!</h5>
-                <a href="https://hackomania2019.eventbrite.sg" target="_blank">
-                  <h4>REGISTER TODAY!! :))</h4>
-                </a>
-
-                <a id="start" onclick="load()">
-                  <h4>START</h4>
-                </a>
-              </div>
-
-              <div id="game">
-                <h1 id="score"></h1>
-                <canvas id="grid" width="500" height="500"></canvas>
-                <p id="prompt">Drag to avoid the lines.</p>
-                <canvas id="health" width="250" height="50"></canvas>
-                <div id="buttons">
-                  <a id="restart" onclick="load()">
-                    <h4>RESTART</h4>
-                  </a>
-                  <a id="close" onclick="hide()">
-                    <h4>CLOSE</h4>
-                  </a>
-                </div>
-                <div id="touch"></div>
-              </div>
+              <h5 class="countDown"><span class="d">116</span> DAYS LEFT!</h5>
+              <a href="https://hackomania2019.eventbrite.sg" target="_blank">
+                <h4>REGISTER TODAY!! :))</h4>
+              </a>
             </div>
           </div>
         </div>
@@ -164,7 +140,7 @@
                     <p> The theme of this year is <a href="https://en.wikipedia.org/wiki/Gamification" target="_blank">Gamification!</a>
                       So assemble your squad, throw on your wizarding hats, and let's
                       get cranking!</p>
-                    <!-- <p>* Registration is not yet open. Please keep watching this space for now.</p> -->
+                    <p>* Registration is not yet open. Please keep watching this space for now.</p>
                     <!-- <a class="textBtn tap" href="#" target="_blank"><span class="arr"></span><p>Registration</p></a> -->
 
                     <p>Follow our <a class="tap" href="https://www.facebook.com/HackOManiaSG/" target="_blank">Facebook
@@ -496,7 +472,7 @@
                       <h3>PRE-EVENT</h3>
                       <p>
                         Date:&emsp; 02 Feb 2019</br>
-                        Time:&emsp; 1200 HRS - 1700 HRS</br>
+                        Time:&emsp; 12:00PM - 05:00PM</br>
                         Venue:&emsp;BLOCK71 Singapore by NUS Enterprise
                       </p>
                     </div>
@@ -512,9 +488,9 @@
                     <div class="md-12 sm-12 rowMargin">
                       <h3>MAIN EVENT</h3>
                       <p>
-                        Start:&emsp; 23 Feb 2019 1100 HRS</br>
-                        Finish:&emsp;24 Feb 2019 1700 HRS</br>
-                        Venue:&emsp; To be unlocked!
+                        From:&emsp; 23 Feb 2019 11:00AM</br>
+                        Till:&emsp; 24 Feb 2019 05:00PM</br>
+                        Venue:&emsp;To be unlocked!
                       </p>
                     </div>
                     <div class="md-12 sm-12 xs-12">
@@ -533,6 +509,7 @@
       </section>
 
       <section id="sponsorship" class="themeCloudy">
+
         <div class="sectionTitle" scrollToId="sponsorship">
           <div class="g noMaxWidth">
             <div class="r">
@@ -548,79 +525,95 @@
             <div id="ourSponsors">
               <div class="g">
                 <div class="r rowMargin">
-                  <div class="xs-12">
-                    <h1>THIS EVENT IS SPECIALLY SPONSORED BY:</h1>
+                  <div class="xs-12 title">
+                    <h1>Our Sponsors</h1>
+                    <div></div>
                   </div>
-                  <div class="md-12">
-                    <div class="eachSponsorGroupWrap platinum">
-                      <h3>Platinum Sponsor</h3>
-                      <div class="logos">
-                        <div class="eachLogo longer">
-                          <a href="https://www.aisingapore.org/" target="_blank"><img src="files/media/logos/aiSingaporeLong.png"></a>
+
+                  <div class="xs-12 sponsorWrap">
+                    <div class="r sponsorMargin">
+
+
+                      <div class="md-12">
+                        <div class="eachSponsorGroupWrap">
+                          <h3>Proudly Supported By</h3>
+                          <div class="logos">
+                            <div class="eachLogo sm-hide">
+                              <a href="https://www.aisingapore.org/" target="_blank"><img src="files/media/logos/aiSingaporeLong.png"></a>
+                            </div>
+                            <div class="eachLogo sm-show">
+                              <a href="https://www.aisingapore.org/" target="_blank"><img src="files/media/logos/aiSingapore.png"></a>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="md-6 sm-6 xs-12">
-                    <div class="eachSponsorGroupWrap gold">
-                      <h3>Deep Tech Partner</h3>
-                      <div class="logos">
-                        <div class="eachLogo">
-                          <a href="https://www.sginnovate.com/" target="_blank"><img src="files/media/logos/sgInnovate.png"></a>
+                      <div class="sm-5 sm-offset-1 xs-12">
+                        <div class="eachSponsorGroupWrap">
+                          <h3>Deep Tech Partner</h3>
+                          <div class="logos">
+                            <div class="eachLogo">
+                              <a href="https://www.sginnovate.com/" target="_blank"><img src="files/media/logos/sgInnovate.png"></a>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="md-6 sm-6 xs-12">
-                    <div class="eachSponsorGroupWrap gold">
-                      <h3>Gold Sponsor</h3>
-                      <div class="logos">
-                        <div class="eachLogo">
-                          <a href="https://www.wanted.jobs/" target="_blank"><img src="files/media/logos/wantedjobs.png"></a>
+                      <div class="sm-5 xs-12">
+                        <div class="eachSponsorGroupWrap">
+                          <h3>Gold Sponsor</h3>
+                          <div class="logos">
+                            <div class="eachLogo">
+                              <a href="https://www.wanted.jobs/" target="_blank"><img src="files/media/logos/wantedjobs.png"></a>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="md-4 sm-6 xs-12">
-                    <div class="eachSponsorGroupWrap silver">
-                      <h3>Silver Sponsor</h3>
-                      <div class="logos">
-                        <div class="eachLogo longer">
-                          <a href="https://www.iss.nus.edu.sg/" target="_blank"><img src="files/media/logos/nusIss.png"></a>
+                      <div class="sm-8 sm-offset-2 xs-12">
+                        <div class="eachSponsorGroupWrap">
+                          <h3>Silver Sponsor</h3>
+                          <div class="logos">
+                            <div class="eachLogo">
+                              <a href="https://www.iss.nus.edu.sg/" target="_blank"><img src="files/media/logos/nusIss.png"></a>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="md-8 xs-12">
-                    <div class="eachSponsorGroupWrap bronze">
-                      <h3>Bronze Sponsor</h3>
-                      <div class="logos">
-                        <div class="eachLogo">
-                          <a href="https://upcloud.com/" target="_blank"><img src="files/media/logos/upcloud.png"></a>
+                      <div class="sm-4 xs-12">
+                        <div class="eachSponsorGroupWrap">
+                          <h3>Bronze Sponsor</h3>
+                          <div class="logos">
+                            <div class="eachLogo">
+                              <a href="https://upcloud.com/" target="_blank"><img src="files/media/logos/upcloud.png"></a>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="md-6 sm-6 xs-12">
-                    <div class="eachSponsorGroupWrap venue">
-                      <h3>Supporting Partner</h3>
-                      <div class="logos">
-                        <div class="eachLogo longer">
-                          <a href="http://www.ntuitive.sg/" target="_blank"><img src="files/media/logos/NTUitive.png"></a>
+                      <div class="sm-4 xs-12">
+                        <div class="eachSponsorGroupWrap">
+                          <h3>Venue Sponsor</h3>
+                          <div class="logos">
+                            <div class="eachLogo">
+                              <a href="http://www.blk71.com/" target="_blank"><img src="files/media/logos/block71.png"></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>                      
+                      <div class="sm-4 xs-12">
+                        <div class="eachSponsorGroupWrap">
+                          <h3>Supporting Partner</h3>
+                          <div class="logos">
+                            <div class="eachLogo">
+                              <a href="http://www.ntuitive.sg/" target="_blank"><img src="files/media/logos/NTUitive.png"></a>
+                            </div>
+                          </div>
                         </div>
                       </div>
+
+
+
                     </div>
                   </div>
-                  <div class="md-6 sm-6 xs-12">
-                    <div class="eachSponsorGroupWrap venue">
-                      <h3>Venue Sponsor</h3>
-                      <div class="logos">
-                        <div class="eachLogo longer">
-                          <a href="http://www.blk71.com/" target="_blank"><img src="files/media/logos/block71.png"></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  
+
                 </div>
               </div>
             </div>
@@ -649,18 +642,14 @@
         <div class="md-5 sm-12 xs-12">
           <div class="contactUs">
             <div class="rowMargin">
-
               <h4>For General Enquiry</h4>
-
               <p>Drop us an email at <a class="tap" href="mailto:contact@geekshacking.com">contact@geekshacking.com</a>
                 or
                 contact us through our <a class="tap" href="https://www.facebook.com/HackOManiaSG/" target="_blank">Facebook
                   page</a>.</p>
-
               <h4>For Sponsorship</h4>
               <p>Please contact <a class="tap" href="mailto:sponsor@geekshacking.com">sponsor@geekshacking.com</a> for
                 sponsorship related matters.</p>
-
             </div>
           </div>
         </div>
@@ -671,11 +660,6 @@
   <script src="files/js/minify.js"></script>
   <script src="files/js/main.js"></script>
 
-  <script src="grid/js/Constants.js"></script>
-  <script src="grid/js/Enemy.js"></script>
-  <script src="grid/js/Game.js"></script>
-  <script src="grid/js/Events.js"></script>
-  <script src="grid/js/main.js"></script>
 
 
 
