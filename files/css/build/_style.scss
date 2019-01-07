@@ -351,28 +351,34 @@ footer {
       margin-bottom: 50px;
     }
 
-    .logos {
+    .silverSponsors {
+      margin-top: -40px;
+      .eachLogo {
+        margin-top: 40px;
+      }
+    }
+
+    .eachLogo {
       padding: 0px 50px;
     }
 
     @include bp(maxMD) {
-      h3 {
-        margin-bottom: 25px;
-      }
 
-      .logos {
+
+      .eachLogo {
         padding: 0px 25px;
       }
     }       
 
     @include bp(maxSM) {
-      h3 {
-        margin-bottom: 25px;
-      }
-
-      .logos {
+      .eachLogo {
         padding: 0px 10px;
       }
+      .bronzeSponsors {
+        .eachLogo {
+          padding: 0px 10px;
+        }
+      }      
     }    
   }
 
