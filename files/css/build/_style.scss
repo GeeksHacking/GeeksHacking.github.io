@@ -363,8 +363,6 @@ footer {
     }
 
     @include bp(maxMD) {
-
-
       .eachLogo {
         padding: 0px 25px;
       }
@@ -374,13 +372,14 @@ footer {
       .eachLogo {
         padding: 0px 10px;
       }
+
       .bronzeSponsors {
         .eachLogo {
           padding: 0px 10px;
         }
       }      
 
-      .venueSponors {
+      .venueSponsors {
         margin-top: -40px;
         .eachLogo {
           margin-top: 40px;
