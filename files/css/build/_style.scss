@@ -525,6 +525,15 @@ footer {
   }
 }
 
+#rules {
+  em {
+    font-family: 'Source Code Pro', monospace;
+    font-style: normal;
+    font-weight: bold;
+    background-color: $red;
+    color: white;
+  }
+}
 
 #judges {
   .eachJudges {
