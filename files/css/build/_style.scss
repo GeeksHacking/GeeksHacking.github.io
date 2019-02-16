@@ -504,6 +504,26 @@ footer {
   }
 }
 
+#rakuten_prizes {
+  .eachPrize {
+
+    h3 {
+      text-align: center; background-color: #FFFFFF; padding: 10px; @include boxShadow(0px 3px 20px -3px rgba(0,0,0,0.2));
+    }
+
+    .img {
+      width: 100%; padding-bottom: 50%; background-size: contain; background-position: center; background-repeat: no-repeat;
+    }
+  }
+
+  .button {
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid black;
+  }
+
+}
+
 #eventSchedule {
   .eachSchedule {
     h3 {
